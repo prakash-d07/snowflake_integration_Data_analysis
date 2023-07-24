@@ -1,1 +1,2 @@
-# snowflake_integration_Data_analysis
+# A simple Data Exploration and Analysis project
+
