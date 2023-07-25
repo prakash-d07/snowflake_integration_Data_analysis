@@ -114,8 +114,8 @@ create or replace storage integration s3_int
   TYPE = EXTERNAL_STAGE
   STORAGE_PROVIDER = S3
   ENABLED = TRUE 
-  STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::862694247397:role/aws_s3_snowflake_int'
-  STORAGE_ALLOWED_LOCATIONS = ('s3://prax-test-bucket-01/', 's3://prax-test-bucket-01/')
+  STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::892694947397:role/aws_s3_snowflake_int'
+  STORAGE_ALLOWED_LOCATIONS = ('s3://prax-test-01/', 's3://prax-test-01/')
   COMMENT = 'Integration with aws s3 buckets' ;
 
 
@@ -144,7 +144,7 @@ CREATE OR REPLACE file format COVID_ANALYSIS.FILE_FORMATS.csv_fileformat
 // Create stage object with integration object & file format object
 
 CREATE OR REPLACE STAGE COVID_ANALYSIS.external_stages.aws_s3_csv
-    URL = 's3://prax-test-bucket-01/'
+    URL = 's3://prax-test-01/'
     STORAGE_INTEGRATION = s3_int
     FILE_FORMAT = COVID_ANALYSIS.FILE_FORMATS.csv_fileformat ;
 
