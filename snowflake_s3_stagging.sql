@@ -114,7 +114,7 @@ create or replace storage integration s3_int
   TYPE = EXTERNAL_STAGE
   STORAGE_PROVIDER = S3
   ENABLED = TRUE 
-  STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::892694947397:role/aws_s3_snowflake_int'
+  STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::897699947397:role/aws_s3_snowflake_int'
   STORAGE_ALLOWED_LOCATIONS = ('s3://prax-test-01/', 's3://prax-test-01/')
   COMMENT = 'Integration with aws s3 buckets' ;
 
